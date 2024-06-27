@@ -65,7 +65,7 @@ void makeTree(int node, int depth)
 
 void set_parent()
 {
-    for(int i=1;i<15;i++)
+    for(int i=1;i<14;i++)
     {
         for(int j=1;j<=n;j++) parents[j][i] = parents[parents[j][i-1]][i-1];
     }
