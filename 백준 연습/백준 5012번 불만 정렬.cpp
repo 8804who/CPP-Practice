@@ -53,7 +53,6 @@ int main()
 
     for(int i=1;i<=n;i++) cin >> arr[i];
     
-
     long long ans = 0;
 
     for(int i=n;i>0;i--)
