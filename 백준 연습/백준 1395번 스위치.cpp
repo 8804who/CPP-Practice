@@ -54,7 +54,7 @@ int main()
     tree.resize(4000001);
     lazy.resize(4000001);
 
-    int a, b, c;
+    int O, S, T;
 
     for(int i=0;i<1000000;i++) arr[i] = 0;
     for(int i=0;i<4000000;i++) tree[i] = 0;
@@ -62,13 +62,13 @@ int main()
 
     for(int i=0;i<M;i++)
     {
-        scanf("%d %d %d", &a, &b, &c);
+        scanf("%d %d %d", &O, &S, &T);
         
-        if (a == 0){
-            updateRange(1,0,N-1,b-1,c-1);
+        if (O == 0){
+            updateRange(1,0,N-1,S-1,T-1);
         }
         else{
-            printf("%d\n",query(1,0,N-1,b-1,c-1));
+            printf("%d\n",query(1,0,N-1,S-1,T-1));
         }
     }
 }
